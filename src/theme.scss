@@ -1,0 +1,39 @@
+// Importing `Work Sans` font
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap");
+@import "custom-palette";
+
+// Default theme
+$theming-material-components-primary: mat-palette($munjal-blue, 400);
+$theming-material-components-accent: mat-palette($munjal-yellow, 300, 500, 700);
+$theming-material-components-warn: mat-palette($munjal-lightblue, 700);
+
+$theming-material-components-theme: mat-light-theme(
+    $theming-material-components-primary,
+    $theming-material-components-accent,
+    $theming-material-components-warn
+);
+
+// Defining an alternate dark theme.
+$dark-primary: mat-palette($munjal-blue, 500);
+$dark-accent: mat-palette($munjal-yellow, 500, 700, 900);
+$dark-warn: mat-palette($munjal-lightblue, 700);
+$dark-theme: mat-dark-theme(
+    (
+      color: (
+        primary: $dark-primary,
+        accent: $dark-accent,
+        warn: $dark-warn,
+      ),
+    )
+);
+
+// Defining a custom heading typography config
+$heading-font-family: "'Work Sans', sans-serif";
+$typography: mat-typography-config(
+  $display-4: mat-typography-level(112px, $font-family: $heading-font-family),
+  $display-3: mat-typography-level(56px, $font-family: $heading-font-family),
+  $display-2: mat-typography-level(45px, $font-family: $heading-font-family),
+  $display-1: mat-typography-level(34px, $font-family: $heading-font-family),
+  $headline: mat-typography-level(24px, $font-family: $heading-font-family),
+  $title: mat-typography-level(20px, $font-family: $heading-font-family),
+);

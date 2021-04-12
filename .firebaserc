@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "munjal-export-import": {
+      "hosting": {
+        "munjal": [
+          "munjal-export-import"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "munjal-export-import"
+  }
+}

@@ -1,0 +1,28 @@
+@import "src/app/app.component";
+
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.subsection {
+  padding: 12vh;
+  justify-content: center;
+}
+
+.img-entrance {
+  width: 40%;
+}
+
+.text {
+  width: 60%;
+  font-size: 5ex;
+  line-height: 90%;
+  align-self: center;
+}
+
+button {
+  width: 40%;
+  margin: 2vw 1vw;
+}
